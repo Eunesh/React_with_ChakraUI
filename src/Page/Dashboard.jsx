@@ -4,7 +4,7 @@ import styled from "@emotion/styled";
 import Header from "../Component/Header";
 import SmallHeightCard from "../CommonComponent/SmallHeightCard";
 import { CreateSectionObjects } from "../Objects/CreateSectionObject";
-import { Flex, Box } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import ImageSection from "../Component/ImageSection";
 
 const RightSideWrapper = styled(Box)({
@@ -21,7 +21,6 @@ const CreateSectionWrapper = styled.div({
   gap: "20px",
 });
 
-const ImageCardSectionWrapper = styled.div({});
 const Dashboard = () => {
   return (
     <>
