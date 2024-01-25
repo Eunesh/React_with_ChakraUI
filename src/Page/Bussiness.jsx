@@ -1,5 +1,4 @@
 import React from "react";
-import Sidebar from "../Component/Sidebar";
 import styled from "@emotion/styled";
 import Header from "../Component/Header";
 import SmallHeightCard from "../CommonComponent/SmallHeightCard";
@@ -21,10 +20,9 @@ const CreateSectionWrapper = styled.div({
   gap: "20px",
 });
 
-const Dashboard = () => {
+const Bussiness = () => {
   return (
     <>
-      <Sidebar />
       <RightSideWrapper>
         <Header />
         <CreateSectionWrapper>
@@ -45,4 +43,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default Bussiness;

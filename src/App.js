@@ -1,9 +1,14 @@
-import Dashboard from "./Page/Dashboard";
+import Sidebar from "./Component/Sidebar";
+import Bussiness from "./Page/Bussiness";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <Dashboard />
+      <Sidebar />
+      <Routes>
+        <Route path="/Business" element={<Bussiness />} />
+      </Routes>
     </>
   );
 }

@@ -268,15 +268,16 @@ summary {
 
 /* Track for scrollbar */
 ::-webkit-scrollbar-track {
-  background: #888;
+  background: white;
 }
 
 /* Handle for scrollbar */
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: #555;
+  border-radius: 10px;
 }
 
 /* Handle on hover scrollbar */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: black;
 }

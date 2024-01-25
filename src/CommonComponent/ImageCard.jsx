@@ -1,7 +1,6 @@
 import React from "react";
 import { Box } from "@chakra-ui/react";
 import { Image, Flex, Text } from "@chakra-ui/react";
-// import MenuContainer from "./Menu";
 
 const ImageCard = ({ Src, Text1, Text2, Menu }) => {
   return (

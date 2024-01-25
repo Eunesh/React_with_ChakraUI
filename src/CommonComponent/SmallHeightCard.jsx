@@ -8,6 +8,10 @@ const SmallHeightCard = ({ Icon, Text1, Text2 }) => {
     borderRadius: "12px",
     boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
     transition: "box-shadow 0.3s ease-in-out;",
+    cursor: "pointer",
+    "&:hover": {
+      boxShadow: "0 8px 16px rgba(0, 0, 0, 0.2)",
+    },
   });
   return (
     <CardContainer>

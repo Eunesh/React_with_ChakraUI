@@ -6,17 +6,25 @@ import { SidebarContentObjects } from "../Objects/SidebarContentObjects";
 import { SidebarFilesContent } from "../Objects/SidebarFilesContentObject";
 import styled from "@emotion/styled";
 import TuneIcon from "@mui/icons-material/Tune";
+import { NavLink, useLocation } from "react-router-dom";
 
 const LowerContainerOfSideBar = styled.div({
-  padding: "10px",
+  padding: "8px",
 });
 
-const Content = styled.div({
+const NavLinkContainer = styled(NavLink)((prop) => ({
   display: "flex",
   flexDirection: "row",
-  gap: "8px",
+  gap: "5px",
+  padding: "5px",
   fontSize: "13px",
-});
+  cursor: "pointer",
+  backgroundColor: prop.active ? "#D3D3D3" : "white",
+  borderRadius: "10px",
+  "&:hover": {
+    backgroundColor: "#D3D3D3",
+  },
+}));
 
 const ContentWrapper = styled.div({
   marginTop: "20px",
@@ -27,6 +35,7 @@ const ContentWrapper = styled.div({
 });
 
 const Sidebar = () => {
+  const { pathname } = useLocation();
   return (
     <Flex
       flexDirection={"column"}
@@ -43,10 +52,14 @@ const Sidebar = () => {
         <ContentWrapper>
           {SidebarContentObjects.map((content, index) => {
             return (
-              <Content key={index}>
+              <NavLinkContainer
+                to={`/${content.name}`}
+                key={index}
+                active={pathname.includes(content.name)}
+              >
                 <div>{content.icon}</div>
                 <Text fontSize="xs">{content.name}</Text>
-              </Content>
+              </NavLinkContainer>
             );
           })}
         </ContentWrapper>
@@ -57,10 +70,14 @@ const Sidebar = () => {
         <ContentWrapper>
           {SidebarFilesContent.map((files, index) => {
             return (
-              <Content key={index}>
+              <NavLinkContainer
+                to={`/${files.name}`}
+                active={pathname.includes(files.name)}
+                key={index}
+              >
                 <div>{files.icon}</div>
                 <Text fontSize="xs">{files.name}</Text>
-              </Content>
+              </NavLinkContainer>
             );
           })}
         </ContentWrapper>
