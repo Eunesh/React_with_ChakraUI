@@ -1,7 +1,7 @@
 import React from "react";
-import { ImageSectionObject } from "../Objects/ImageSectionObject";
-import ImageCard from "../CommonComponent/ImageCard";
+import ImageCard from "./ImageCard";
 import { Grid, GridItem } from "@chakra-ui/react";
+import { ImageSectionObject } from "../multipleObjects/ImageSectionObject";
 
 const ImageSection = () => {
   return (
