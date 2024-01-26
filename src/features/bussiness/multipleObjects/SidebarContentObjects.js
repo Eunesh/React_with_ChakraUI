@@ -5,19 +5,19 @@ import LockOpenIcon from "@mui/icons-material/LockOpen";
 
 export const SidebarContentObjects = [
   {
-    name: "Recent",
+    name: "recent",
     icon: <AccessTimeIcon fontSize="small" />,
   },
   {
-    name: "Library",
+    name: "library",
     icon: <GridViewIcon fontSize="small" />,
   },
   {
-    name: "Links",
+    name: "links",
     icon: <LinkIcon fontSize="small" />,
   },
   {
-    name: "Private",
+    name: "private",
     icon: <LockOpenIcon fontSize="small" />,
   },
 ];

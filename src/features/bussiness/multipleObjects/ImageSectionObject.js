@@ -1,4 +1,4 @@
-import MenuContainer from "../components/Menu";
+import MenuContainer from "../../../components/Menu";
 
 export const ImageSectionObject = [
   {

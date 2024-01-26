@@ -1,9 +1,9 @@
 import React from "react";
 import { Flex, Text } from "@chakra-ui/react";
 import SidebarHeader from "./SidebarHeader";
-import SearchBar from "../SearchBar";
-import { SidebarContentObjects } from "../../multipleObjects/SidebarContentObjects";
-import { SidebarFilesContent } from "../../multipleObjects/SidebarFilesContentObject";
+import SearchBar from "../../features/bussiness/components/SearchBar";
+import { SidebarContentObjects } from "../../features/bussiness/multipleObjects/SidebarContentObjects";
+import { SidebarFilesContent } from "../../features/bussiness/multipleObjects/SidebarFilesContentObject";
 import styled from "@emotion/styled";
 import TuneIcon from "@mui/icons-material/Tune";
 import { NavLink, useLocation } from "react-router-dom";

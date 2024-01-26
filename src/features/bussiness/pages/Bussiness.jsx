@@ -1,11 +1,10 @@
 import React from "react";
 import styled from "@emotion/styled";
-import Header from "../components/Header";
+import Header from "../../../components/Header";
 import SmallHeightCard from "../components/SmallHeightCard";
 import { CreateSectionObjects } from "../multipleObjects/CreateSectionObject";
 import { Box } from "@chakra-ui/react";
 import ImageSection from "../components/ImageSection";
-import Sidebar from "../components/sidebar/Sidebar";
 
 const RightSideWrapper = styled(Box)({
   marginLeft: "230px",
@@ -24,7 +23,6 @@ const CreateSectionWrapper = styled.div({
 const Bussiness = () => {
   return (
     <>
-      <Sidebar />
       <RightSideWrapper>
         <Header />
         <CreateSectionWrapper>

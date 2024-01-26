@@ -6,23 +6,23 @@ import QuestionAnswerIcon from "@mui/icons-material/QuestionAnswer";
 
 export const SidebarFilesContent = [
   {
-    name: "Law",
+    name: "law",
     icon: <GavelIcon fontSize="small" />,
   },
   {
-    name: "Sales",
+    name: "sales",
     icon: <StorageIcon fontSize="small" />,
   },
   {
-    name: "Business",
+    name: "business",
     icon: <WorkIcon fontSize="small" />,
   },
   {
-    name: "Design",
+    name: "design",
     icon: <BrushIcon fontSize="small" />,
   },
   {
-    name: "Marketing",
+    name: "marketing",
     icon: <QuestionAnswerIcon fontSize="small" />,
   },
 ];
